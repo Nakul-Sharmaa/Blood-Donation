@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/back"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ViewParticipants">
+
+    <TextView
+        android:id="@+id/tvParticipantDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Participants List"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:padding="8dp" />
+
+    <!-- TextView for showing next blood donation camp date -->
+    <TextView
+        android:id="@+id/tvNextCampDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Next Blood Donation Camp: -"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGeneratePDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate PDF"
+        android:layout_marginTop="16dp"
+        android:background="#948D8B"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
